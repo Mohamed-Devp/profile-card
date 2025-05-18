@@ -10,6 +10,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What i learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -34,6 +35,21 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+
+# What i learned
+While working in this project, i learned how to set/position multiple images using the `background-image` and `background-position` properties.
+
+```css
+body {
+  background-image: 
+    url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: 
+      calc(50% - 35rem) calc(50% - 21rem),
+      calc(50% + 32rem) calc(50% + 30rem);
+  }
+```
 
 ## Author
 

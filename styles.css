@@ -30,6 +30,13 @@ body {
     height: 100vh;
     font-family: var(--primary-font);
     background-color: var(--dark-cyan);
+    background-image: 
+        url("./images/bg-pattern-top.svg"),
+        url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: 
+        calc(50% - 35rem) calc(50% - 21rem),
+        calc(50% + 32rem) calc(50% + 30rem);
     overflow: hidden;
 }
 
@@ -133,6 +140,14 @@ main {
 }
 
 /* Responsive layout */
+@media screen and (max-width: 600px) {
+    body {
+        background-position: 
+            calc(50% - 28rem) calc(50% - 30rem),
+            calc(50% + 25rem) calc(50% + 30rem);
+    }    
+}
+
 @media screen and (max-width: 415px) {
     main {
         width: 90vw;
